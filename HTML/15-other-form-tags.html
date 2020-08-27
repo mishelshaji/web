@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <select name="language">
+            <option value="c">C</option>
+            <option value="cpp">C ++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="c sharp">C#</option>
+        </select>
+        <br>
+
+        <select name="language">
+            <option value="c" disabled>C</option>
+            <option value="cpp" selected>C ++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="c sharp">C#</option>
+        </select>
+        <br>
+
+        <select name="language">
+            <optgroup label="Primary">
+                <option value="c">C</option>
+                <option value="cpp">C ++</option>
+                <option value="java">Java</option>
+            </optgroup>
+            <optgroup label="Secondary">
+                <option value="python">Python</option>
+                <option value="c sharp">C#</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <select name="language" multiple>
+            <option value="c">C</option>
+            <option value="cpp">C ++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="c sharp">C#</option>
+        </select>
+        <br>
+
+        <textarea name="comment" cols="30" rows="5"></textarea>
+    </form>
+</body>
+</html>
