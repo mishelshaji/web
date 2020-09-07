@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50vh;
+        }
+        #d1{
+            background-color: coral;
+            animation-name: animation1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        #d2{
+            background-color: cornflowerblue;
+            animation: animation2 infinite 10s;
+        }
+
+        @keyframes animation1 {
+            from{background-color: coral;}
+            to{background-color: cornflowerblue;}
+        }
+
+        @keyframes animation2 {
+            0%{background-color: cornflowerblue;}
+            50%{background-color: red;}
+            60%{background-color: darkblue;}
+            80%{background-color: darkorange;}
+            100%{background-color: darkviolet;}
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+</body>
+</html>

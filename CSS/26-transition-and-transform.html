@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin: 10px;
+            transition-duration: 2s;
+            /* transition-delay: 1s; */
+            /* transition-timing-function: linear; */
+        }
+        #d1:hover{
+            /* transform: translateX(50px); */
+            /* transform: translateY(50px); */
+            transform: translate(50px, 50px);
+        }
+        #d2:hover{
+            /* transform: scale(0); */
+            transform: scale(2);
+        }
+        #d3:hover{
+            /* transform: skewX(50deg);
+            transform: skewY(50deg); */
+            transform: skew(30deg, 30deg);
+        }
+        #d4:hover{
+            transform: rotate(3600deg);
+        }
+        #d5:hover{
+            transform: rotate3d(30deg, 60deg, 120deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+</body>
+</html>

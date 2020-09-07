@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ADA996; 
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    height: 100vh;
+}
+.container{
+    margin-top: 150px;
+    padding-top: 150px;
+}
+.team-container{
+    background-color: #ffffff;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 75px 15px 10px;
+    margin-top: -75px;
+}
+.team-image{
+    background-color: #ffffff;
+    height: 150px;
+    width: 150px;
+    border: 2px solid #a3a3a3;
+    border-radius: 50%;
+    background-image: url(../img/steve-jobs.jpg);
+    background-size: contain;
+    background-position: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.team-name{
+    text-transform: uppercase;
+    text-align: center;
+}
+.team-about{
+    text-align: justify;
+}
+.social-media{
+
+}
