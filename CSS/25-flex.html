@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+        .container{
+            background-color: yellow;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="display: flex;">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container" style="display: flex; flex-wrap: wrap;">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container" style="display: flex; flex-direction: column;">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container" style="display: flex; flex-basis: 100%; justify-content: center;">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="container" style="display: flex; flex-direction: row-reverse;">
+        <div class="box"><h1>1</h1></div>
+        <div class="box"><h1>2</h1></div>
+    </div>
+</body>
+</html>
