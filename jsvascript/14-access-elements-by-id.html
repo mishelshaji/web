@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading2">This is heading 1</h2>
+    <p id="p1"></p>
+    <script>
+        var e = document.getElementById('heading2')
+        console.log(e)
+        console.log(e.innerText);
+        e.innerText = "New title";
+        e.style.color = "green";
+        e.style.fontWeight="lighter";
+
+        document.getElementById('p1').innerText = "P tag";
+    </script>
+</body>
+</html>
