@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: #e71212;
+        }
+        .font-light{
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="target" class="test">Change the color of this text</h1>
+
+    <script>
+        var element = document.getElementById('target');
+        element.classList.add('red');
+        element.classList.add('font-light');
+        console.log(element.classList);
+        if(element.classList.contains('font-light')){
+            element.classList.remove('red');
+        }
+    </script>
+</body>
+</html>

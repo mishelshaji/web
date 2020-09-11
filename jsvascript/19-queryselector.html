@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 class="t1">Heding 1</h1>
+        <h1 class="t1">Heding 2</h1>
+        <h1 class="t2">Heding 3</h1>
+        <h1 class="t1">Heding 4</h1>
+    </div>
+    <h1 class="t1">Heding 5</h1>
+
+    <script>
+        // document.querySelector('div>.t1').style.color="red";
+        var elements = document.querySelectorAll('div>.t1');
+        elements.forEach(e=>{
+            e.style.color="red";
+        })
+    </script>
+</body>
+</html>

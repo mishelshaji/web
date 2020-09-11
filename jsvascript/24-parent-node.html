@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>user 1</td>
+            <td>user1@mail.com</td>
+            <td>
+                <button type="button" class="btn-delete" data-email="user1@mail.com">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>user 2</td>
+            <td>user2@mail.com</td>
+            <td>
+                <button type="button" class="btn-delete" data-email="user2#mail.com">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>user 3</td>
+            <td>user3@mail.com</td>
+            <td>
+                <button type="button" class="btn-delete" data-email="user3@mail.com">Delete</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var elements = document.querySelectorAll('.btn-delete');
+        elements.forEach(e=>{
+            e.addEventListener('click', function(e){
+                var email = e.target.getAttribute('data-email')
+                let opt = confirm(`Do you want to delete ${email}`);
+                if(opt){
+                    e.target.parentNode.parentNode.remove();
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

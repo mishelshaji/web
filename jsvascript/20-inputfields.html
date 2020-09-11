@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="name" onkeyup="showData(event)" placeholder="Enter your name">
+    <h1 id="result"></h1>
+
+    <script>
+        function showData(e){
+            // var text = e.target.value;
+            var text = document.getElementById('name').value;
+            document.querySelector('#result').innerText = text.toUpperCase();
+        }
+    </script>
+</body>
+</html>

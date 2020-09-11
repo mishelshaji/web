@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST" name="loginform" onchange="validate()">
+        <fieldset>
+            <legend>Login</legend>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="loginbtn" value="Login" disabled></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <script>
+        function validate(){
+            var form = document.forms["loginform"];
+            var email = form["email"].value;
+            var password = form["password"].value;
+
+            if(email.length == 0 || password.length == 0){
+                form["loginbtn"].setAttribute('disabled', "true");
+            }
+            else{
+                form["loginbtn"].removeAttribute("disabled");
+            }
+        }
+
+    </script>
+</body>
+</html>

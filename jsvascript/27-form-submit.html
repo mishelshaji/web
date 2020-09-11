@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST" name="loginform" onsubmit="saveData(event)">
+        <fieldset>
+            <legend>Login</legend>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="loginbtn" value="Login"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <script>
+        function validate(){
+            var form = document.forms["loginform"];
+            var email = form["email"].value;
+            var password = form["password"].value;
+
+            if(email.length < 4 || password.length < 4){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+
+        function saveData(e){
+            if(!validate()){
+                e.preventDefault();
+                // return false;
+                // You can also use return false
+                // and change onsubmit="return saveData()"
+            }
+        }
+
+    </script>
+</body>
+</html>
