@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Heading 1</h1>
+    <h1 id="h2">Heading 2</h1>
+    <input type="text" id="txtbox">
+
+    <button onclick="change()">Run</button>
+    <script src="jquery.min.js"></script>
+    <script>
+        function change(){
+            var text1 = $('#h1').text();
+            $('#h1').text(text1.toUpperCase());
+
+            $('#h2').html('<u>New text</u>');
+
+            var data = $('#txtbox').val();
+            alert(`You entered "${data}" in the text box.`);
+        }
+    </script>
+</body>
+</html>
